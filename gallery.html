@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CozyCorner</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="stylesTailwind.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+
+</head>
+
+<body class="m-0 p-0">
+  
+<header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-center relative">
+    <h1 class="text-xl font-bold absolute left-4">CozyCorner</h1>
+
+    <nav class="hidden md:flex space-x-6">
+      <a href="index.html" class="hover:text-orange-400">Home</a>
+      <a href="contactus.html" class="hover:text-orange-400">Contact Us</a>
+      <a href="aboutus.html" class="hover:text-orange-400">About Us</a>
+      <a href="services.html" class="hover:text-orange-400">Services</a>
+      <a href="gallery.html" class="text-orange-500 font-semibold">Gallery</a>
+    </nav>
+
+    <button id="menu-btn" class="md:hidden text-3xl text-orange-500 focus:outline-none absolute right-4">
+      &#9776;
+    </button>
+  </div>
+
+  <div id="mobile-menu"
+    class="hidden flex-col md:hidden bg-orange-50 border-t border-orange-200 shadow-inner px-6 py-4 animate-fade-down">
+    <a href="index.html"
+       class="block py-2 border-b border-orange-200 text-gray-700 hover:text-orange-500 transition">Home</a>
+    <a href="contactus.html"
+       class="block py-2 border-b border-orange-200 text-gray-700 hover:text-orange-500 transition">Contact Us</a>
+    <a href="aboutus.html"
+       class="block py-2 border-b border-orange-200 text-gray-700 hover:text-orange-500 transition">About Us</a>
+    <a href="services.html"
+       class="block py-2 border-b border-orange-200 text-gray-700 hover:text-orange-500 transition">Services</a>
+    <a href="gallery.html"
+       class="block py-2 text-orange-500 font-semibold hover:text-orange-600 transition">Gallery</a>
+  </div>
+</header>
+
+ <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+   const links = mobileMenu.querySelectorAll('a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+  });
+</script>
+
+
+
+<section class="py-16 bg-gray-50">
+ 
+  <div class="max-w-6xl mx-auto px-4 mb-10 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">Chairs Collection</h2>
+    <p class="text-gray-600">Explore our range of stylish and comfortable chairs.</p>
+  </div>
+ 
+  <div class="max-w-6xl mx-auto px-4 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    
+    <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300">
+      <img src="assets/chair-2.png" alt="Modern Chair" class="w-full h-56 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Modern Chair</h3>
+        <p class="text-orange-500 font-bold text-sm mt-1">$129.99</p>
+        <button class="mt-4 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300">
+      <img src="assets/chair-3.png" alt="Wooden Chair" class="w-full h-56 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Wooden Chair</h3>
+        <p class="text-orange-500 font-bold text-sm mt-1">$109.99</p>
+        <button class="mt-4 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">Add to Cart</button>
+      </div>
+    </div> 
+    <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300">
+      <img src="assets/chair-4.png" alt="Luxury Chair" class="w-full h-56 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Luxury Chair</h3>
+        <p class="text-orange-500 font-bold text-sm mt-1">$159.99</p>
+        <button class="mt-4 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">Add to Cart</button>
+      </div>
+    </div> 
+    <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300">
+      <img src="assets/chair-5.png" alt="Stylish Chair" class="w-full h-56 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Stylish Chair</h3>
+        <p class="text-orange-500 font-bold text-sm mt-1">$139.99</p>
+        <button class="mt-4 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">Add to Cart</button>
+      </div>
+    </div> 
+    <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300">
+      <img src="assets/chair-6.png" alt="Classic Chair" class="w-full h-56 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Classic Chair</h3>
+        <p class="text-orange-500 font-bold text-sm mt-1">$119.99</p>
+        <button class="mt-4 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">Add to Cart</button>
+      </div>
+    </div> 
+    <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300">
+      <img src="assets/chair-7.png" alt="Elegant Chair" class="w-full h-56 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Elegant Chair</h3>
+        <p class="text-orange-500 font-bold text-sm mt-1">$149.99</p>
+        <button class="mt-4 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="max-w-6xl mx-auto px-4 mt-20 mb-10 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">Sofas Collection</h2>
+    <p class="text-gray-600">Relax in comfort with our stylish and cozy sofas.</p>
+  </div>
+ 
+  <div class="max-w-6xl mx-auto px-4 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+     <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300">
+      <img src="assets/sofa-1.png" alt="Modern Sofa" class="w-full h-56 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Modern Sofa</h3>
+        <p class="text-orange-500 font-bold text-sm mt-1">$499.99</p>
+        <button class="mt-4 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">Add to Cart</button>
+      </div>
+    </div>
+     <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300">
+      <img src="assets/sofa-2.png" alt="Modern Sofa" class="w-full h-56 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">wooden sofas</h3>
+        <p class="text-orange-500 font-bold text-sm mt-1">$499.99</p>
+        <button class="mt-4 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">Add to Cart</button>
+      </div>
+    </div>
+     <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300">
+      <img src="assets/sofa-3.png" alt="Modern Sofa" class="w-full h-56 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Leather sofa</h3>
+        <p class="text-orange-500 font-bold text-sm mt-1">$400.99</p>
+        <button class="mt-4 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">Add to Cart</button>
+      </div>
+    </div>
+     
+     <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300">
+      <img src="assets/sofa-4.png" alt="Modern Sofa" class="w-full h-56 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Cape sofa</h3>
+        <p class="text-orange-500 font-bold text-sm mt-1">$550.99</p>
+        <button class="mt-4 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+<div class="max-w-6xl mx-auto px-4 mt-20 mb-10 text-center">
+  <h2 class="text-3xl font-bold text-gray-800 mb-4">Table Collection</h2>
+  <p class="text-gray-600">Discover our elegant and functional tables designed for every space and style.</p>
+</div>
+
+
+  <div class="max-w-6xl mx-auto px-4 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
+    <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300">
+      <img src="assets/table-1.png" alt="Modern Sofa" class="w-full h-56 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Wooden Table</h3>
+        <p class="text-orange-500 font-bold text-sm mt-1">$550.99</p>
+        <button class="mt-4 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">Add to Cart</button>
+      </div>
+    </div>
+     <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300">
+      <img src="assets/table-2.png" alt="Modern Sofa" class="w-full h-56 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800 ">Stone Table</h3>
+        <p class="text-orange-500 font-bold text-sm mt-1">$720.99</p>
+        <button class="mt-4 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">Add to Cart</button>
+      </div>
+    </div>
+     <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300">
+      <img src="assets/table-3.png" alt="Modern Sofa" class="w-full h-56 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Glass Table</h3>
+        <p class="text-orange-500 font-bold text-sm mt-1">$600.99</p>
+        <button class="mt-4 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">Add to Cart</button>
+      </div>
+    </div>
+     
+     <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300">
+      <img src="assets/table-4.png" alt="Modern Sofa" class="w-full h-56 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">Glass Table</h3>
+        <p class="text-orange-500 font-bold text-sm mt-1">$550.99</p>
+        <button class="mt-4 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+  
+<footer class="bg-gray-900 text-gray-300 py-10">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+    <div>
+      <h3 class="text-orange-500 text-2xl font-bold mb-4">TableZone</h3>
+      <p class="text-sm leading-relaxed">
+        Discover the perfect furniture to complement your space. Quality and comfort in every piece.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="text-orange-500 font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+        <li><a href="aboutus.html" class="hover:text-white transition">About Us</a></li>
+        <li><a href="contactus.html" class="hover:text-white transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-orange-500 font-semibold mb-4">Customer Service</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">FAQs</a></li>
+        <li><a href="#" class="hover:text-white transition">Shipping & Returns</a></li>
+        <li><a href="#" class="hover:text-white transition">Order Tracking</a></li>
+        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-orange-500 font-semibold mb-4">Follow Us</h4>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-white transition text-xl"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-white transition text-xl"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-white transition text-xl"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-white transition text-xl"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500">
+    © 2025 TableZone. All rights reserved.
+  </div>
+</footer>
+
+
+</body>
+</html>
